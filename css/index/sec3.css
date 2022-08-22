@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* section3 시작 */
+.section.sec3 {
+    width: 100%;
+    height: 100%;
+    border: 0px solid;
+    margin-top: 200px;
+}
+
+.section.sec3 .inner-con {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border: 0px solid #f00;
+    margin: 0 auto;
+}
+
+.section.sec3 .inner-con .t-con {
+    width: 100%;
+    height: 25px;
+    border: 0px solid;
+    position: relative;
+}
+
+.section.sec3 .inner-con .t-con .bar {}
+
+.section.sec3 .inner-con .t-con span.arrow {
+    width: 20px;
+    height: 25px;
+    border: 0px solid;
+    position: absolute;
+}
+.section.sec3 .inner-con .t-con span.arrow :hover{
+    cursor: pointer;
+}
+.section.sec3 .inner-con .t-con span.arrow.left {
+    right: 95px;
+}
+
+.section.sec3 .inner-con .t-con span.arrow.left img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec3 .inner-con .t-con span.arrow.right {
+    right: 30px;
+}
+
+.section.sec3 .inner-con .t-con span.arrow.right img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec3 .inner-con::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec3 .inner-con .text-zone {
+    width: 320px;
+    height: 540px;
+    border: 0px solid;
+    box-sizing: border-box;
+
+    float: left;
+}
+
+.section.sec3 .inner-con .text-zone .t-title {
+    width: 100%;
+    height: 46px;
+    border: 0px solid;
+    font-size: 40px;
+    margin-bottom: 17px;
+    font-weight: 600;
+
+}
+
+.section.sec3 .inner-con .text-zone .t-sub {
+    width: 100%;
+    height: 54px;
+    line-height: 27px;
+    border: 0px solid;
+    font-size: 18px;
+    margin-bottom: 53px;
+}
+
+.section.sec3 .inner-con .text-zone .t-more {
+    width: 100%;
+    height: 20px;
+}
+
+.section.sec3 .inner-con .text-zone .t-more::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec3 .inner-con .text-zone .t-more .more-t {
+    font-size: 20px;
+    float: left;
+    font-weight: 600;
+}
+
+.section.sec3 .inner-con .text-zone .t-more .more-Img {
+    width: 33px;
+    height: 20px;
+    border: 0px solid;
+    margin-left: 12px;
+    float: left;
+    padding: 5px 0;
+}
+
+.section.sec3 .inner-con .text-zone .t-more .more-Img img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec3 .inner-con .r-con {
+    width: 1050px;
+    height: 540px;
+    border: 0px solid;
+    float: left;
+    margin-left: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.section.sec3 .inner-con .r-con .shop-zone {
+    width: 100%;
+    height: 540px;
+    border: 0px solid #f00;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section.sec3 .inner-con .r-con .shop-zone .shop-gallery{
+    width: 200%;
+    height: 540px;
+    border: 0px solid;
+    position: absolute;
+}
+.section.sec3 .inner-con .r-con .shop-zone .shop-gallery .shop {
+    width: 50%;
+    height: 540px;
+    border: 0px solid #00f;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop .shopName {
+    transition: 0.3s;
+
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shopName:nth-child(1) {
+    width: 55%;
+    height: 257px;
+    border: 0px solid;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop .shopName:nth-child(2) {
+    width: 55%;
+    height: 257px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop .shopName:nth-child(3) {
+    width: 43%;
+    height: 540px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop:nth-child(2) .shopName:nth-child(1) {
+    width: 55%;
+    height: 257px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop:nth-child(2) .shopName:nth-child(2) {
+    width: 55%;
+    height: 257px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop:nth-child(2) .shopName:nth-child(3) {
+    width: 43%;
+    height: 540px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.section.sec3 .inner-con .r-con .shop-gallery .shop img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}

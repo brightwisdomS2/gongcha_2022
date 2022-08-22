@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* section1 시작 */
+.section.sec1 {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    margin-top: 153px;
+}
+
+.section.sec1 .inner-con {
+    width: 100%;
+    height: 550px;
+    border: 0px solid;
+    position: relative;
+}
+
+.section.sec1 .inner-con .gallery {
+    width: 100%;
+    height: 550px;
+    border: 0px solid #ff0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section.sec1 .inner-con .gallery > ul > li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section.sec1 .inner-con .gallery > ul > li a {
+    display: block;
+}
+
+.section.sec1 .inner-con .gallery-title {
+    width: 100%;
+    max-width: 1060px;
+    height: 42px;
+    border: 0px solid;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -530px;
+    text-align: center;
+    line-height: 42px;
+}
+
+.container .section.sec1 .inner-con .gallery-title::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li {
+    width: 18.5%;
+    height: 42px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+    /* background: #67625d;*/
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+    background: #67625dc9;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li:hover {
+    background: #a1af1b;
+    cursor: pointer;
+}
+
+/*.on {
+    background: #a1af1b;
+}*/
+
+.container .section.sec1 .inner-con .gallery-title > ul > li .innerLi {
+    width: 100%;
+    height: 42px;
+    position: relative;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li .innerLi::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li .innerLi .box {
+    width: 0;
+    height: 42px;
+    background: #a1af1b;
+    position: absolute;
+    float: left;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li .innerLi span.title {
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li.stop {
+    width: 6%;
+    margin-left: 1.5%
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li.stop:hover {
+    background: #67625d;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li.stop span.title {
+    width: 30px;
+    height: auto;
+    border: 0px solid;
+    display: block;
+    padding: 5px 15px 0 15px;
+}
+
+.container .section.sec1 .inner-con .gallery-title > ul > li.stop span.title img {
+    width: 100%;
+    height: auto;
+}

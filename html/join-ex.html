@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/join/join-ex.css">
+</head>
+
+<body>
+    <div class="join">
+        <div class="inner-join">
+            <div class="con-top">
+                <h1 class="title">뷰티포인트 통합멤버십 회원가입을 환영합니다!</h1>
+                <p>아모레퍼시픽 통합멤버십(뷰티포인트)에 가입하시면 오설록 쇼핑몰 외 모든 브랜드 온/오프 매장에서 상품을 구매 할 때마다 현금처럼 사용할 수 있는 포인트 적립과 사용 등 다양한 혜택을 받으실 수 있습니다.</p>
+            </div>
+            <div class="con-join">
+                <form action="joinOk.do" method="post" name="joinForm" id="joinForm">
+                    <ul>
+                        <li>
+                            <!-- <label for="userName">이름</label>-->
+                            <input type="text" name="userName" id="userName" placeholder="이름(실명으로 입력해주세요)">
+                        </li>
+
+
+                        <li class="birthGender">
+                            <ul>
+                                <li><!--<label for="gender">생년월일</label>--><input type="text" name="birth" id="birth" placeholder="생년월일8자리(ex.19960909)">
+                                </li>
+                                <li>
+                                    <label for="gender">성별</label>
+                                    <input type="radio" name="gender" id="ge1" value="남자" checked>남자 <input type="radio" name="gender" id="ge2" value="여자">여자
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="phone">
+                            <select name="telecom" id="telecom">
+                                <option value="">통신사</option>
+                                <option value="SKT">SKT</option>
+                                <option value="KT">KT</option>
+                                <option value="LG u+">LG u+</option>
+                            </select>
+                            <input type="text" name="phone" id="phonenumber" maxlength="11">
+                            <!--maxlength 입력길이 제한-->
+                        </li>
+                        <li>
+                            <!--<label for="userId">아이디</label>-->
+                            <input type="text" name="userId" id="userId">
+                            <input type="button" value="아이디 중복 확인" id="idCheckOk">
+                            <!-- 아이디 확인이 안되면 회원가입을 실행하지 못하게-->
+                            <input type="hidden" name="checkId" value="NoChecked">
+                        </li>
+                        <li>
+                            <!--<label for="userPw">비빌번호</label>-->
+                            <input type="password" name="userPw" id="userPw">
+                        </li>
+                        <li>
+                            <!--<label for="userPw2">비빌번호확인</label>-->
+                            <input type="password" name="userPw2" id="userPw2">
+                            <span class="pwCheck"></span> <!-- 비빌번호 확인-->
+                        </li>
+                        <li>
+                            <!--<label for="emailSns">이메일</label>-->
+                            <input type="email" name="emailSns" id="emailSns">
+                        </li>
+
+
+                        <li>
+                            <label for="hobbys">취미</label>
+                            <input type="checkbox" name="hobbys" value="등산" checked>등산
+                            <input type="checkbox" name="hobbys" value="여행">여행
+                            <input type="checkbox" name="hobbys" value="영화감상">영화감상
+                            <input type="checkbox" name="hobbys" value="쇼핑">쇼핑
+                        </li>
+                        <li>
+                            <label for="memo">자기소개</label><br>
+                            <textarea name="memo" id="memo" cols="30" rows="10" placeholder="10글자이상 입력하세요"></textarea></li>
+                        <li>
+                            <input type="reset" value="초기화">
+                            <input type="button" value="회원가입" id="joinOk">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        //아이디 중복 확인 
+        var idCheckOk = document.getElementById('idCheckOk'); //버튼은 변하는 값이 아니기때문에 밖에써줘도 된다(전역변수)
+        idCheckOk.addEventListener('click', idCheckOkFunc);
+
+        function idCheckOkFunc() {
+            //변할수 있는 값은 함수 안에 써줘야 한다.(지역변수)
+            //아이디 중복체크 -> checkId.value -> idCheckOks
+            var checkId = document.getElementsByName('checkId')[0];
+            var userId = document.getElementsByName('userId')[0];
+            if (userId.value == "" || userId.value == null || userId.value.length <= 4) {
+                alert("아이디 입력 오류. 5글자 이상 다시 입력하세요");
+                userId.focus(); //userId 포커스
+                return false; //전체함수를 종료(joinOkFunc)
+            }
+            // userId -> m1111로 회원가입 되어있다고 가정
+            if (userId.value != "m1111") {
+                alert("사용가능한 아이디입니다");
+                checkId.value = "OkChecked";
+            } else {
+                alert("중복 아이디입니다")
+                userId.focus();
+            }
+            return false;
+        }
+
+
+
+        //비밀번호 확인
+        var userPw2 = document.getElementsByName('userPw2')[0];
+        userPw2.addEventListener('keyup', pwCheckedFunc);
+
+        function pwCheckedFunc() {
+            var userPw = document.getElementsByName('userPw')[0];
+            var userPw2 = document.getElementsByName('userPw2')[0];
+            var pwCheck = document.querySelector('span.pwCheck');
+
+            if (userPw.value == userPw2.value) {
+                pwCheck.textContent = "비밀번호가 일치합니다";
+                pwCheck.style.color = "#00f";
+            } else {
+                pwCheck.textContent = "비밀번호가 일치하지 않습니다";
+                pwCheck.style.color = "#f00";
+            }
+        }
+
+
+
+
+        /*function idCheckOkFunc() {
+            var userId = document.getElementsByName('userId')[0];
+            var checkId = document.getElementsByName('checkId')[0];
+        }*/
+
+
+
+        //회원가입 클릭 -> 회원가입 실행(사용자의 입력정보를 joinOk.do로 전송)
+        var joinForm = document.querySelector('#joinForm'); //전체폼
+        //1.선택자
+        var joinOk = document.querySelector('#joinOk');
+        //2. 이벤트(클릭) -> 3. 함수를 호출
+        joinOk.addEventListener('click', joinOkFunc);
+        //함수를 구현
+        function joinOkFunc() {
+            //변할수 있는 값은 함수 안에 써줘야 한다.(지역변수)
+
+            //이름 - 2글자 이상, null/공란이면 -> 다시입력
+            //아이디 - 5글자 이상, null/공란이면 -> 다시입력
+            //비밀번호 - 5글자 이상, null/공란이면 -> 다시입력
+            //이메일 - 8글자 이상, null/공란이면 -> 다시입력
+            //전화번호1 - ""이면 -> 오류
+            //전화번호2 - 4글자 이상 입력
+            //전화번호3 - 4글자 이상, null/공란이면 -> 다시입력
+            //자기소개 - 10글자 이상, null/공란이면 -> 다시입력
+
+
+
+            //자기소개
+
+            var userName = document.getElementsByName('userName')[0];
+            var userId = document.getElementsByName('userId')[0];
+            var userPw = document.getElementsByName('userPw')[0];
+            var userPw2 = document.getElementsByName("userPw2")[0];
+            var email = document.getElementsByName('emailSns')[0];
+            var phone = document.getElementsByName('phone'); //3개 다 쓸거니까 번지수 따로 적지않는다
+            var memo = document.getElementsByName('memo')[0];
+            var checkId = document.getElementsByName('checkId')[0];
+
+
+            //이름 - 2글자 이상, null/공란이면 -> 다시입력
+            if (userName.value == "" || userName.value == null || userName.value.length < 2) {
+                alert("이름 입력 오류. 2글자 이상 다시 입력하세요");
+                userName.focus(); //focus -> return false
+                return false; //joinOkFunc종료
+            }
+            //아이디 - 5글자 이상, null/공란이면 -> 다시입력
+            if (userId.value == "" || userId.value == null || userId.value.length <= 4) {
+                alert("아이디 입력 오류. 5글자 이상 다시 입력하세요");
+                userId.focus();
+                return false;
+            }
+            //아이디 중복확인
+            if (checkId.value != "OkChecked") {
+                alert("아이디 중복확인 해주세요");
+                idCheckOk.focus(); //idCheckOk포커스
+                return false;
+            }
+
+            //비밀번호 - 5글자 이상, null/공란이면 -> 다시입력
+            if (userPw.value == "" || userPw.value == null || userPw.value.length <= 4) {
+                alert("비밀번호 입력 오류. 5글자 이상 다시 입력하세요");
+                userPw.focus();
+                return false;
+            }
+            //이메일 - 8글자 이상, null/공란이면 -> 다시입력
+            if (email.value == "" || email.value == null || email.value.length <= 7) {
+                alert("이메일 입력 오류. 8글자 이상 다시 입력하세요")
+                email.focus();
+                return false;
+            }
+            //전화번호1 - ""이면 -> 오류
+            if (phone[0].value == "") {
+                alert("전화번호 첫번째 칸 선택 오류. 다시 선택하세요")
+                phone[0].focus();
+                return false;
+            }
+
+            //전화번호2 - 4글자 이상, null/공란이면 -> 다시입력
+            if (phone[1].value == "" || phone[1].value == null || phone[1].value.length <= 3) {
+                alert("전화번호 두번째 칸 입력 오류. 다시 입력하세요")
+                phone[1].focus();
+                return false;
+            }
+
+            //전화번호3 - 4글자 이상, null/공란이면 -> 다시입력
+            if (phone[2].value == "" || phone[2].value == null || phone[2].value.length <= 3) {
+                alert("전화번호 세번째 칸 입력 오류. 다시 입력하세요")
+                phone[2].focus();
+                return false;
+            }
+
+            //자기소개 - 10글자 이상, null/공란이면 -> 다시입력
+            if (memo.value == "" || memo.value == null || memo.value.length <= 10) {
+                alert("자기소개는 10글자 이상 입력하세요")
+                memo.focus();
+                return false;
+            }
+
+
+
+
+
+
+
+
+            //위의 모든 조건을 만족하면(유효성검사) 실행
+            alert("회원가입 실행");
+            joinForm.submit(); //서버에 사용자 정보 전송
+        }
+    </script>
+
+</body></html>

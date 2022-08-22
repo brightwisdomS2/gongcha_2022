@@ -1,0 +1,381 @@
+@media (max-width:1023px) {
+    html{
+
+    }
+    section{
+        position: static;
+        padding: 0 !important;
+    }
+
+    /* Header */
+    header{
+        display: none !important;
+    }
+    .header-scroll{
+        display: block !important
+    }
+    .header-scroll{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: #fff;
+    }
+    .header-scroll-inner .header-bottom{
+        width: 100%;
+        background: none;
+    }
+    .header-scroll h1.logo{
+        float: none;
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%) !important;
+    }
+    .header-scroll h1.logo a{
+    }
+    
+    .side-menu{
+        display: none;
+    }
+    .menu-btn, 
+    .menu-close-btn{
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 25px 15px;
+    }
+    .header-scroll .menu-btn{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .header-scroll span img{
+        width: 100%;
+    }
+    .pc-nav{
+        display: none;
+    }
+    .mobile-gnb{
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 80%;
+    }
+    .mobile-nav{
+        display: block;
+        background: #fff;
+        height: 100vh;
+        position: relative;
+    }
+    .mobile-nav .logo{
+        display: inline-block;
+        position: relative;
+        left: 0;
+        padding: 10px;
+    }
+    .mobile-nav .logo a{
+        display: block;
+        position: relative;
+    }
+    .mobile-nav span.menu-close-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mobile-nav .main-menu li{
+        display: block;
+        width: 100%;
+        text-align: left;
+        position: relative;
+    }
+    .mobile-nav .main-menu li a{
+        color: #000;
+        position: relative;
+        padding-left: 20px;
+    }
+    .trigger{
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .trigger span{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: #000;
+        transition: 0.3s;
+    }
+    .trigger span:nth-child(1){
+        top: 50%;
+    }
+    .trigger span:nth-child(2){
+        top: 50%;
+        transform: rotate(90deg);
+    }
+    .trigger.active span:nth-child(2){
+        transform: rotate(0);
+    }
+    .mobile-nav .sub-menu{
+    }
+    .mobile-nav .sub-menu.active{
+        display: block;
+        background: rgba(117,112,105,0.1);
+    }
+    /* nav{
+        position: absolute;
+        width: 70% !important;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+    nav span{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 20px 15px;
+    }
+    .menu-btn{
+        float: left;
+    }
+    .menu-close-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav span img{
+        width: 100%;
+    }
+    
+    .header-scroll .main-menu{
+        position: absolute;
+        background: red;
+        opacity: 0.5;
+        display: block;
+        height: 100vh;
+    }
+    .header-scroll .main-menu>li{
+        display: block;
+        width: 100%;
+        border: 1px solid #000;
+    }
+    .sub-menu{
+        display: none;
+    } */
+
+    /*############################ section : main-slide ##########################*/
+    section.main-slide{
+        margin-top: 80px !important;
+    }
+    .slide-title{
+        display: none;
+    }
+
+    /*############################ section : season-menu ##########################*/
+    .season-menu-inner{
+        padding: 50px;
+    }
+    .season-product a{
+        width: 25%;
+    }
+    /* .season-product a span,
+    .season-product a span::before,
+    .season-product a span::after,
+    .season-product a span p{
+        display: none;
+    } */
+
+    /*############################ section : best-menu ##########################*/
+    .best-menu-inner>div{
+        width: 100%;
+        padding: 50px;
+    }
+    .best .image-con{
+        padding: 0 90px;
+    }
+    .best .image-con img{
+        width: 100%;
+    }
+    .best{
+        padding: 50px;
+    }
+    .best span{
+        margin: 10px 0;
+    }
+    .best .mix{
+        margin-top: 10px;
+    }
+    /*############################ section : ad-banner ##########################*/
+    .ad-banner-inner>div{
+        width:100%
+    }
+    .ad-banner-inner>div{
+        padding: 0;
+    }
+    .membership p{
+    }
+    /*############################ section : tea-recipe ##########################*/
+    .tea-con-box{
+        height: 620px;
+    }
+    .tea-left{
+        width: 100%;
+        margin: 40px 0 0;
+    }
+    .tea-left img{
+        animation: none;
+        margin: 0;
+    }
+    .tea-right{
+        width: 100%;
+        padding: 50px;
+    }
+    .tea-right b{
+        line-height: 40px;
+        font-size: 22px;
+    }
+    .tea-right a{
+        width: 100%;
+        background: #983a43;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .store a{
+        padding: 0 30px;
+    }
+    /*############################ section : store ##########################*/
+    .store-inner > div{
+        width: 100%;
+        padding: 0;
+    }
+    .store-inner > div a{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .store a{
+        position: relative;
+        line-height: 60px;
+        font-size: 20px;
+        bottom: 0;
+    }
+    .new-open-inner,
+    .franchise-inner{
+        height: auto;
+        padding: 50px;
+    }
+    .new-open h2{
+        padding: 0;
+    }
+
+}
+
+@media (max-width:768px){
+    /* ############################# section : season-menu ########################### */
+    .season-menu-inner{
+        padding: 20px;
+    }
+    .season-product a{
+        /* width: 100%; */
+        width: 50%;
+        height: 300px;
+        padding: 0;
+    }
+    /* ############################# section : best-menu ########################### */
+    section.best-menu{
+        padding: 0;
+    }
+    .best-menu-inner>div{
+        padding: 20px;
+    }
+    .best{
+        padding: 20px;
+        height: auto;
+    }
+    .text-con{
+        width: 100%;
+        padding: 0;
+    }
+    .text-con h3{
+        line-height: 1.2em;
+    }
+    .image-con{
+        width: 100%;
+        height: 200px;
+    }
+    .image-con img{
+        margin: 0;
+    }
+    .text-con span{
+        width: 100%;
+    }
+    .near-store{
+        height: 430px;
+    }
+    /* ############################# section : tea-recipe ########################### */
+    .tea-menu{
+        padding: 40px 20px 0;
+    }
+    .tea-menu h4,
+    .tea-menu ul{
+        float: none;
+        width: 100%;
+    }
+    .tea-menu ul li{
+        width: 23%;
+        margin: 0 5%;
+        text-align: center;
+    }
+    .tea-menu ul li:nth-child(2){
+    }
+    .tea-left{
+        margin-top: 0;
+        height: 200px;
+    }
+    .tea-left img{
+        top: 10px;
+    }
+    /* ############################# section : ad-banner ########################### */
+    .ad-banner div{
+
+    }
+    .membership p{
+        left: 20px;
+    }
+    .membership span{
+        right: 50%;
+        bottom: 20px;
+        transform: translateX(50%);
+    }
+    .new-open-inner,
+    .franchise-inner{
+        height: auto;
+        padding: 20px;
+    }
+    /* footer */
+    footer{
+        height: 300px;
+    }
+    .footer-left{
+        display: none;
+    }
+    .footer-right{
+        width: 100%;
+    }
+    .footer-right-inner{
+        padding: 20px;
+    }
+    .footer-sns{
+        float: left;
+        padding: 10px 10px 0 0;
+    }
+    .footer-menu li{
+        padding: 0 5px;
+    }
+}

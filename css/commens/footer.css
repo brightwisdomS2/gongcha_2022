@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/* footer-foof */
+.footer-roof {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    background: #67625d;
+    margin-top: 50px;
+}
+
+.footer-roof .inner-con {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border: 0px solid;
+    margin: 0 auto;
+}
+
+.footer-roof .inner-con::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.footer-roof .inner-con .left-con {
+    width: 90%;
+    float: left;
+    border: 0px solid;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.footer-roof .inner-con .left-con::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-roof .inner-con .left-con .notice {
+    float: left;
+    font-size: 13px;
+    padding-right: 13px;
+    border-right: 1px solid #fff;
+    color: #fff;
+}
+
+.footer-roof .inner-con .left-con .n-slide {
+    float: left;
+    height: 20px;
+    border: 0px solid;
+    margin-left: 13px;
+    overflow: hidden;
+}
+
+.footer-roof .inner-con .left-con .n-slide > ul > li a {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+}
+
+.footer-roof .inner-con .left-con .more a {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-roof .inner-con .left-con .more {
+    float: left;
+
+    margin-left: 70px;
+}
+
+.footer-roof .inner-con .right-con {
+    float: right;
+    width: 10%;
+    border: 0px solid;
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+
+
+.footer-roof .inner-con .right-con .sns-fb {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer-roof .inner-con .right-con .sns-insta {
+    float: left;
+}
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: auto;
+    background: #fafafa;
+    opacity: 100%;
+}
+
+.footer .inner-footer {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    border: 0px solid;
+}
+
+.footer .inner-footer .tCon {
+    opacity: 100%;
+    width: 100%;
+    height: 160px;
+    position: relative;
+
+}
+
+.footer .inner-footer .tCon::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .tCon .call {
+    width: 210px;
+    height: 100px;
+    border: 0px solid;
+    margin-right: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.footer .inner-footer .tCon .call h4.title {
+    font-size: 13px;
+    color: #7b7b7b;
+    font-weight: 400;
+}
+
+.footer .inner-footer .tCon .call h3.number {
+    font-size: 30px;
+    font-weight: 500;
+    color: #595959;
+}
+
+.footer .inner-footer .tCon .call p.time {
+    font-size: 11px;
+    color: #828282;
+}
+
+.footer .inner-footer .tCon .cs {
+    width: 220px;
+    height: 100px;
+    border: 0px solid;
+    position: absolute;
+    left: 300px;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.footer .inner-footer .tCon .cs h4.title {
+    font-size: 13px;
+    color: #7b7b7b;
+    font-weight: 400;
+}
+
+.footer .inner-footer .tCon .cs h3.emailSns {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #595959;
+}
+
+.footer .inner-footer .tCon .cs h5.number {
+    font-size: 11px;
+    line-height: 20px;
+    color: #6b6b6b;
+}
+
+.footer .inner-footer .tCon .cs p.time {
+    font-size: 11px;
+    line-height: 20px;
+
+}
+
+.footer .inner-footer .tCon .icon {
+    width: 480px;
+    height: auto;
+    border: 0px solid;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+}
+
+
+.footer .inner-footer .tCon .icon::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .tCon .icon > ul > li {
+    width: 60px;
+    height: auto;
+    float: left;
+    border: 0px solid;
+    font-size: 13px;
+    padding: 0 30px;
+        text-align: center;
+
+    
+}
+.footer .inner-footer .tCon .icon > ul > li:nth-child(1){
+    border-left: 1px solid #eee;
+    padding-left: 50px;
+}
+.footer .inner-footer .tCon .icon > ul > li:nth-child(4) {
+    padding-right: 0px;
+}
+
+.footer .inner-footer .tCon .icon > ul > li a {
+    display: block;
+}
+
+.footer .inner-footer .tCon .icon > ul > li a:hover {
+    opacity: 50%;
+    
+}
+
+.footer .inner-footer .tCon .icon >ul>li a img {
+    width: 80%;
+    padding: 10%;
+    height: auto;
+}
+
+.footer .inner-footer .bCon {
+    opacity: 100%;
+    width: 100%;
+    height: 160px;
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.footer .inner-footer .bCon h1.logo {
+    width: 85px;
+    height: 110px;
+    border: 0px solid;
+    margin: 30px 0;
+}
+
+.footer .inner-footer .bCon h1.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer .inner-footer .bCon .fText {
+    width: 700px;
+    height: auto;
+    border: 0px solid;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    text-align: left;
+}
+
+.footer .inner-footer .bCon .fText .fGnb {
+    width: 700px;
+    height: auto;
+    border: 0px solid;
+}
+
+.footer .inner-footer .bCon .fText .fGnb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .bCon .fText .fGnb > ul > li {
+    float: left;
+    font-size: 12px;
+    padding-right: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .inner-footer .bCon .fText .fGnb > ul > li a {
+    display: block;
+}
+
+.footer .inner-footer .bCon .fText .fGnb > ul > li a:hover {
+    cursor: pointer;
+}
+
+.footer .inner-footer .bCon .fText p.tText {
+    font-size: 13px;
+}
+
+.footer .inner-footer .bCon .fText p.notice {
+    font-size: 13px
+}
+
+.footer .inner-footer .bCon .service {
+    width: 310px;
+    height: 110px;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+}
+
+.footer .inner-footer .bCon .service .inner-service {
+    width: 100%;
+    height: auto;
+    color: #828282;
+}
+
+.footer .inner-footer .bCon .service .inner-service::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .bCon .service .inner-service h4.title {
+    width: 100%;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.footer .inner-footer .bCon .service .inner-service .ser-iconbtn {
+    width: 50px;
+    height: 50px;
+    background: url(../../img/commens/footer/service-icon.png)no-repeat 50%;
+    background-size: cover;
+    position: absolute;
+    border: 0px solid;
+    margin: 10px;
+    float: left;
+}
+
+.footer .inner-footer .bCon .service .inner-service .ser-iconbtn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.footer .inner-footer .bCon .service .inner-service .ser-text {
+    width: 220px;
+    height: auto;
+    border: 0px solid;
+    float: right;
+    text-align: left;
+    margin: 10px 15px 0 0;
+    font-size: 12px;
+}

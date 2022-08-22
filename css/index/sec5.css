@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* section5 시작 */
+
+.section.sec5 {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    border: 0px solid;
+}
+
+.section.sec5 .inner-con {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border: 0px solid #f00;
+    margin: 0 auto;
+}
+
+/* sec5 t-con */
+.section.sec5 .inner-con .t-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid #f00;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.section.sec5 .inner-con .t-con .section-title {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.section.sec5 .inner-con .t-con .section-title::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec5 .inner-con .t-con .section-title h3.title {
+    font-size: 40px;
+    float: left;
+}
+
+.section.sec5 .inner-con .t-con .section-title .title-icon {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 0px solid;
+    float: left;
+}
+
+.section.sec5 .inner-con .t-con .section-subtitle {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: 25px;
+}
+
+.section.sec5 .inner-con .t-con .section-title .title-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec5 .inner-con .t-con .today-pro {
+    width: 100%;
+    height: 490px;
+    border: 0px solid;
+    background: #ededed;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 {
+    width: 100%;
+    height: 360px;
+    border: 0px solid;
+    background: url(../../img/index/sec5/bg.jpg) no-repeat 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .main-text {
+    width: 100%;
+    height: 360px;
+    border: 0px solid #fff;
+    box-sizing: border-box;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .main-text .pro-Name {
+    width: 1000px;
+    color: #fff;
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    margin-left: -500px;
+    border: 0px solid #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .main-text .pro-main-img {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    left: 50%;
+    margin-left: -130px;
+    top: 240px;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .main-text pro-main-img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text {
+    width: 290px;
+    height: 245px;
+    border: 0px solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 245px;
+    right: 290px;
+    color: #fff;
+    text-indent: 5px;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text .percent {
+    position: absolute;
+    top: 0;
+    font-size: 22px;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text .b-price {
+    position: absolute;
+    top: 30px;
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text .b-price .p-text {
+    width: 75px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+    opacity: 70%;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text .a-price {
+    position: absolute;
+    top: 50px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text .buy-btn {
+    width: 130px;
+    height: 45px;
+    position: absolute;
+    top: 170px;
+    font-size: 16px;
+    background: #e1e1e1;
+    text-align: center;
+    line-height: 45px;
+    color: #161616;
+}
+
+.section.sec5 .inner-con .t-con .today-pro .sec5-bg1 .sub-text .buy-btn:hover {
+    cursor: pointer;
+    background: #dadada;
+}
+
+.section.sec5 .inner-con .b-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid #00f;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+/* sec5 b-con --> left-con */
+.section.sec5 .inner-con .b-con::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec5 .inner-con .b-con .left-con {
+    width: 693px;
+    height: 270px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    background: url(../../img/index/sec5/left-bg.jpg) no-repeat 50%;
+    background-size: cover;
+    padding-left: 35px;
+}
+
+.section.sec5 .inner-con .b-con .left-con:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.section.sec5 .inner-con .b-con .left-con a {
+    display: block;
+    color: #fff;
+}
+
+.section.sec5 .inner-con .b-con .left-con a .title {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.section.sec5 .inner-con .b-con .left-con .sub {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100
+}
+
+.section.sec5 .inner-con .b-con .left-con .more {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration-line: underline;
+    font-weight: 600;
+}
+
+/* sec5 b-con --> right-con */
+
+.section.sec5 .inner-con .b-con .right-con {
+    width: 50%;
+    max-width: 693px;
+    height: 270px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    background: url(../../img/index/sec5/right-bg.jpg) no-repeat 50%;
+    background-size: cover;
+    padding-left: 35px;
+}
+
+.section.sec5 .inner-con .b-con .right-con:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.section.sec5 .inner-con .b-con .right-con a {
+    display: block;
+    color: #fff;
+}
+
+.section.sec5 .inner-con .b-con .right-con a span.dadalogoImg {
+    width: 35px;
+    height: 72px;
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 37px;
+
+}
+
+.section.sec5 .inner-con .b-con .right-con a span.dadalogoImg img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec5 .inner-con .b-con .right-con a .title {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.section.sec5 .inner-con .b-con .right-con .sub {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100
+}
+
+.section.sec5 .inner-con .b-con .right-con .more {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration-line: underline;
+    font-weight: 600;
+}

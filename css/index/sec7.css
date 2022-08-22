@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* sec7 시작 */
+.section.sec7 {
+    width: 100%;
+    height: 100%;
+    border: 0px solid;
+    margin-top: 100px;
+}
+
+.section.sec7 .inner-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid #f00;
+    margin: 0 auto;
+}
+
+.section.sec7 .inner-con .title {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 54px;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.section.sec7 .inner-con .title::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec7 .inner-con .title .follow {
+    font-size: 20px;
+    float: left;
+    color: #757575;
+}
+
+.section.sec7 .inner-con .title .t-osulloc {
+    font-size: 36px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+    color: #505051;
+}
+
+.section.sec7 .inner-con .banner {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.section.sec7 .inner-con .banner .inner-banner {
+    width: 100%;
+    max-width: 1400px;
+    height: 240px;
+    position: relative;
+    margin: 0 auto;
+    border: 0px solid #ccc;
+}
+
+.section.sec7 .inner-con .banner .inner-banner .banner-con {
+    width: 100%;
+    position: absolute;
+}
+
+.section.sec7 .inner-con .banner .inner-banner .banner-con > ul > li {
+    width: 20%;
+    height: 240px;
+    float: left;
+    border: 0px solid #000;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.1s;
+}
+
+.section.sec7 .inner-con .banner .inner-banner .banner-con > ul > li:hover {
+    transform: scale(1.05);
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.section.sec7 .inner-con .banner .inner-banner .banner-con > ul > li a {
+    display: block;
+
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow {
+    width: 30px;
+    height: 30px;
+    border: 0px solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    z-index: 5;
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow.left {
+    left: 20px;
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow.left:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow.left img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow.right {
+    right: 20px;
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow.right img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec7 .inner-con .banner .inner-banner span.arrow.right:hover {
+    opacity: 70%;
+    cursor: pointer;
+}

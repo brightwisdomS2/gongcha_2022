@@ -1,0 +1,609 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.section.sec6 {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+}
+
+.section.sec6 .inner-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+}
+
+.section.sec6 .inner-con .t-con {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec6 .inner-con .t-con .title-zone {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    margin-bottom: 25px;
+}
+
+.section.sec6 .inner-con .t-con .title-zone::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .t-con .title-zone .title {
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.section.sec6 .inner-con .t-con .title-zone .title-icon {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 0px solid;
+    float: left;
+}
+
+.section.sec6 .inner-con .t-con .title-zone .title-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec6 .inner-con .t-con .t-sub {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.section.sec6 .inner-con .video-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid
+}
+
+.section.sec6 .inner-con .video-con .video-zone {
+    width: 100%;
+    height: 520px;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+.section.sec6 .inner-con .video-con .video-zone .inner-vid{
+    width: 100%;
+    height: 530px;
+    border: 0px solid;
+    overflow: hidden;
+    position: relative;
+}
+.section.sec6 .inner-con .video-con .video-zone .inner-vid video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section.sec6 .inner-con .video-con .btn {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    background: #000;
+    color: #969696;
+    font-size: 20px;
+}
+
+.section.sec6 .inner-con .video-con .btn::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .video-con .btn .left-btn {
+    width: 9%;
+    height: 100px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+}
+
+.section.sec6 .inner-con .video-con .btn .left-btn img {
+    width: 20%;
+    height: auto;
+    padding: 30% 0;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section.sec6 .inner-con .video-con .btn .tea-btn {
+    width: 82%;
+    height: 100px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+}
+
+.section.sec6 .inner-con .video-con .btn .tea-btn::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .video-con .btn .tea-btn > ul > li {
+    width: 25%;
+    height: 100px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+.section.sec6 .inner-con .video-con .btn .tea-btn > ul > li:hover{
+    cursor: pointer;
+}
+
+.section.sec6 .inner-con .video-con .btn .right-btn {
+    width: 9%;
+    height: 100px;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+}
+
+.section.sec6 .inner-con .video-con .btn .right-btn img {
+    width: 20%;
+    height: auto;
+    padding: 30% 0;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section.sec6 .inner-con .m-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.section.sec6 .inner-con .m-con .choose-btn {
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    color: #a1a1a1;
+    font-size: 18px;
+}
+
+.section.sec6 .inner-con .m-con .choose-btn::after {
+    content: "";
+    display: block;
+    clear: both;
+    border-bottom: 2px solid #ececec;
+
+}
+
+.section.sec6 .inner-con .m-con .choose-btn .inner-btn {
+    width: auto;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: right;
+}
+
+.section.sec6 .inner-con .m-con .choose-btn .inner-btn::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .m-con .choose-btn .inner-btn > ul > li {
+    line-height: 46px;
+    text-align: center;
+    float: left;
+    margin: 40px 0px 0px 45px;
+    box-sizing: border-box;
+}
+.section.sec6 .inner-con .m-con .choose-btn .inner-btn > ul > li:hover{
+    cursor: pointer;
+    color: #000;
+}
+.section.sec6 .inner-con .m-con .product-space {
+    width: 100%;
+    max-width: 1400px;
+    height: 610px;
+    border: 0px solid;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.section.sec6 .inner-con .m-con .product-space .page{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section.sec6 .inner-con .m-con .product-space .page.best{
+    display: none;
+}
+.section.sec6 .inner-con .m-con .product-space .page.sale{
+    display: none;
+}
+.section.sec6 .inner-con .m-con .product-space .page::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box {
+    width: 25%;
+    height: 610px;
+    border-left: 1px solid #ececec;
+    float: left;
+    box-sizing: border-box;
+    
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    padding: 0 22px;
+    box-sizing: border-box;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box:nth-child(1) {
+    border: 0px solid;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img {
+    width: 100%;
+    height: 400px;
+    border: 0px solid;
+    box-sizing: border-box;
+   /* position: absolute;*/
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img .cart{
+    width: 65px;
+    height: 65px;
+    border: 0px solid;
+    padding: 300px 0 0 220px;
+    display: none;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img:hover .cart{
+    display: block;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img .cart a span.cartBg:hover{
+    opacity: 80%;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img .cart a{
+    width: 65px;
+    height: 65px;
+    display: block;
+    border: 0px solid;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img .cart a span.cartBg{
+    width: 65px;
+    height: 65px;
+    background: #000;
+    display: block;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .inner-box .pro-Img .cart a span.cartBg img{
+    width: 60%;
+    height: auto;
+    padding: 20%;
+}
+
+/*page-review 이미지*/
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(1) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-review-0-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(1) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-review-0-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(2) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-review-1-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(2) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-review-1-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(3) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-review-2-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(3) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-review-2-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(4) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-review-3-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.review .product-box:nth-child(4) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-review-3-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+/* page-best 이미지 */
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(1) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-best-0-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(1) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-best-0-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(2) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-best-1-before.png) no-repeat 50%;
+    background-size: cover;
+}
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(2) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-best-1-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(3) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-best-2-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(3) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-best-2-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(4) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-best-3-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.best .product-box:nth-child(4) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-best-3-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* page-sale 이미지 */
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(1) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-sale-0-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(1) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-sale-0-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(2) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-sale-1-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(2) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-sale-1-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(3) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-sale-2-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(3) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-sale-2-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(4) .inner-box .pro-Img {
+    background: url(../../img/index/sec6/sec6-sale-3-before.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.sale .product-box:nth-child(4) .inner-box .pro-Img:hover {
+    background: url(../../img/index/sec6/sec6-sale-3-after.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .sticker::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .sticker .best {
+    width: 40px;
+    line-height: 20px;
+    text-align: center;
+    background: #a89079;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .sticker .new{
+        width: 40px;
+    line-height: 20px;
+    text-align: center;
+    background: #a1af1b;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .sticker .saleT {
+    width: 40px;
+    line-height: 20px;
+    text-align: center;
+    background: #ff5c5c;
+    float: left;
+        color: #fff;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .pro-Name {
+    width: 100%;
+    line-height: 20px;
+    border: 0px solid;
+    margin-bottom: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+   
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .price {
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    border: 0px solid;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page.product-box .price::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .price .b-price {
+    font-size: 16px;
+    float: left;
+    color: #bcbcbc;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .price .percent {
+    font-size: 16px;
+    float: left;
+    color: #ff5c5c;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    font-size: 18px;
+    line-height: 20px;
+    color: #727272;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .l-icon {
+    width: 23px;
+    height: 20px;
+    float: left;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .l-icon a{
+    width: 23px;
+    height: 20px;
+    display: block;
+}
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .l-icon a img {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: block;
+    border: 0px solid;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .l-Text {
+    float: left;
+    width: 20px;
+    height: auto;
+    border: 0px solid;
+    margin-left: 7px;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .r-icon {
+    width: 23px;
+    height: 20px;
+    float: left;
+    margin-left: 60px;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .r-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.section.sec6 .inner-con .m-con .product-space .page .product-box .icon .r-Text {
+    width: 30px;
+    border: 0px solid;
+    float: left;
+    margin-left: 7px;
+}
+
+.section.sec6 .inner-con .b-con {
+    width: 200px;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.section.sec6 .inner-con .b-con > a {
+    display: block;
+}
+
+.section.sec6 .inner-con .b-con > a::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec6 .inner-con .b-con > a .b-Text {
+    font-size: 20px;
+    float: left;
+}
+
+.section.sec6 .inner-con .b-con > a .b-icon {
+    width: 40px;
+    height: auto;
+    float: left;
+    border: 0px solid;
+}
+
+.section.sec6 .inner-con .b-con > a .b-icon img {
+    width: 100%;
+    height: auto;
+    padding: 6px 15px;
+}
+.sec6on1{
+    color: #fff;
+}
+.sec6on2 {
+    color: #6c801a;
+    border-bottom: 3px #6c801a solid;
+}

@@ -1,0 +1,359 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(../commens/header.css);
+@import url(../commens/footer.css);
+
+#wrap {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+}
+
+.contents {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    margin-top: 200px;
+}
+
+.contents .inner-con {
+    width: 100%;
+    height: auto;
+}
+
+.contents .inner-con .login {
+    width: 100%;
+    max-width: 640px;
+    height: 800px;
+    border: 0px solid #000;
+    margin: 30px auto;
+    box-sizing: border-box;
+    padding: 20px 50px 20px;
+    box-shadow: 1px 1px 5px #555;
+}
+
+.contents .inner-con .login .login-con {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    border: 0px solid;
+}
+
+.contents .inner-con .login .login-con .login-title {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.contents .inner-con .login .login-con .login-title h1.mainTitle {
+    line-height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+.contents .inner-con .login .login-con .userNotuser {
+    width: 100%;
+    max-width: 540px;
+    height: 45px;
+    border: 0px solid;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contents .inner-con .login .login-con .userNotuser .user {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border: 0px solid #f00;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+}
+
+.contents .inner-con .login .login-con .userNotuser .user ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.contents .inner-con .login .login-con .userNotuser .user ul > li.login-choose {
+    width: 50%;
+    line-height: 45px;
+    text-align: center;
+    background: #ccc;
+    float: left;
+    box-sizing: border-box;
+    border: 0px solid;
+
+}
+
+.contents .inner-con .login .login-con .userNotuser .user >ul li.login-choose a {
+    font-size: 13px;
+    display: block;
+}
+
+
+.contents .inner-con .login .login-con .userNotuser .user >ul > li.login-choose a.loguser {
+    width: 100%;
+    color: #222;
+    text-align: center;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    background: #fff;
+}
+
+.contents .inner-con .login .login-con .userNotuser .user ul > li.login-choose a.lognotuser {
+    background: #f6f6f6;
+    width: 100%;
+    color: #727272;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #e5e5e5;
+}
+
+
+/*비회원 로그인창*/
+.contents .inner-con .login .login-con .userNotuser .notUser {
+    background: #fff;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border: 0px solid #ff0;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+
+.contents .inner-con .login .login-con .userNotuser .notUser ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.contents .inner-con .login .login-con .userNotuser .notUser ul > li.login-choose {
+    width: 50%;
+    line-height: 45px;
+    text-align: center;
+    background: #ccc;
+    float: left;
+    box-sizing: border-box;
+    border: 0px solid;
+
+}
+
+.contents .inner-con .login .login-con .userNotuser .notUser ul li.login-choose a {
+    font-size: 13px;
+    display: block;
+}
+
+
+.contents .inner-con .login .login-con .userNotuser .notUser ul > li.login-choose a.loguser {
+    width: 100%;
+    color: #727272;
+    text-align: center;
+    border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #999;
+        background: #f6f6f6;
+
+}
+
+.contents .inner-con .login .login-con .userNotuser .notUser ul > li.login-choose a.lognotuser {
+    background: #fff;
+    width: 100%;
+    color: #222;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+/*여기까지 비회원 로그인 끝*/
+
+
+.contents .inner-con .login .login-con .login-form {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li {
+    width: 100%;
+    height: auto;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li input.focus1 {
+    box-sizing: border-box;
+    text-indent: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li input.focus1:focus {
+outline: 1px solid #999; 
+}
+
+.contents .inner-con .login .login-con .login-form ul > li input.focus2 {
+    box-sizing: border-box;
+    text-indent: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    outline-color: #f00;
+
+}
+
+.contents .inner-con .login .login-con .login-form ul > li input.focus2:focus {
+outline: 1px solid #999; 
+}
+
+.contents .inner-con .login .login-con .login-form ul>li input {
+    display: block;
+    width: 100%;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li input[type=text] {
+    display: block;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li input[type=password] {
+    box-sizing: border-box;
+    display: block;
+}
+
+/*.contents .inner-con .login .login-con .login-form ul > li input[type=checkbox] {
+    display: inline-block;
+    border: 1px solid;
+    color: #f00;
+    font-size: 20px;
+    margin: 15px 5px;
+}*/
+
+.contents .inner-con .login .login-con .login-form ul > li input[type=button] {
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: #74824c;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0px solid;
+    outline: none;
+}
+.contents .inner-con .login .login-con .login-form ul > li input[type=button]:hover{
+    cursor: pointer;
+}
+
+/*.contents .inner-con .login .login-form ul > li a {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+}*/
+
+.contents .inner-con .login .login-con .login-form ul > li.sub {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li.sub .sub-con {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li.sub .sub-con::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li.sub .sub-con > ul > li {
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li.sub .sub-con > ul > li > a {
+    width: 100%;
+    color: #727272;
+    display: block;
+}
+
+.contents .inner-con .login .login-con .login-form ul > li.sub .sub-con > ul > li:nth-child(2) {
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+}
+
+.contents .inner-con .login .login-con .sns-login{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    margin-bottom: 0px;
+    
+}
+.contents .inner-con .login .login-con .sns-login .snsName{
+    width: 100%;
+    height: 55px;
+    border: 0px solid;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.contents .inner-con .login .login-con .sns-login .snsName:nth-child(1){
+    background: #fae100;
+}
+.contents .inner-con .login .login-con .sns-login .snsName:nth-child(2){
+    background: #26cc09;
+}
+.contents .inner-con .login .login-con .sns-login .snsName:nth-child(3){
+    background: #3b5998;
+}
+.contents .inner-con .login .login-con .sns-login .snsName a{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.contents .inner-con .login .login-con .sns-login .snsName a .icon{
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+.contents .inner-con .login .login-con .sns-login .snsName a .icon img{
+    width: 100%;
+    height: auto;
+}
+.contents .inner-con .login .login-con .sns-login .snsName a .logText{
+    text-align-last: center;
+    line-height: 55px;
+    font-size: 14px;
+        color: #fff;
+
+    border: 0px solid #000;
+    padding: 0 55px;
+}
+
+/*비회원 로그인*/
+.login-form.two{
+    display: none;
+}
+
+
+
+
+/*footer 시작*/

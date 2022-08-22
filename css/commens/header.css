@@ -1,0 +1,835 @@
+@charset "utf-8";
+
+.headerScroll {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+        display: block;
+}
+
+.headerScroll .inner-con {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.headerScroll .inner-con .header-bottom {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header h1.logo {
+    width: 110px;
+    height: 40px;
+    border: 0px solid;
+    float: left;
+    padding: 15px 0;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header h1.logo a {
+    display: block;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header h1.logo a img {
+    width: 100%;
+    height: auto;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .gnb {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border: 0px solid;
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -425px;
+    margin-right: 50px;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .gnb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .gnb > ul > li {
+    width: 130px;
+    height: auto;
+    float: left;
+    padding: 23px 0;
+    margin: 0 40px 0 0;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .gnb > ul > li a {
+    color: #fff;
+    font-size: 15px;
+    /*font-weight: bold;*/
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .gnb > ul > li a:hover {
+    color: #a1af1b;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn {
+    width: 104px;
+    height: 64px;
+    border: 0px solid;
+    display: block;
+    float: right;
+    margin-right: 28px;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li {
+    width: 24px;
+    height: 24px;
+    border: 0px solid;
+    float: left;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li a {
+    display: block;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(1) {
+    margin-right: 16px;
+    background: url(../../img/commens/header/search-scrollheader.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(2) {
+    margin-right: 16px;
+    background: url(../../img/commens/header/cart-scrollheader.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(3) {
+    background: url(../../img/commens/header/more-scrollheader.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(1):hover {
+    background: url(../../img/commens/header/search-change.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(2):hover {
+    margin-right: 16px;
+    background: url(../../img/commens/header/cart-change.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+
+
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(3):hover {
+    background: url(../../img/commens/header/more-change.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .search-box {
+    width: 350px;
+    height: 50px;
+    border: 0px solid;
+    background: #fff;
+    position: absolute;
+    top: 64px;
+    right: 95px;
+    z-index: 20;
+    box-shadow: 4px 2px 10px #ccc;
+    display: none;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .search-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .search-box input {
+    display: block;
+    width: 280px;
+    height: 50px;
+    border: 0px solid;
+    font-size: 15px;
+    float: left;
+    text-indent: 10px;
+    outline: none;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .search-box .s-icon {
+    width: 50px;
+    height: 50px;
+    border: 0px solid;
+    float: right;
+    box-sizing: border-box;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .search-box .s-icon img {
+    width: 50%;
+    height: auto;
+    padding: 25%;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .etc-box {
+    width: 200px;
+    height: 160px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    position: absolute;
+    z-index: 30;
+    top: 64px;
+    right: 0px;
+    padding: 25px 20px;
+    display: none;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .etc-box > ul > li {
+    line-height: 40px;
+    font-size: 14px;
+    color: #464646;
+}
+
+.headerScroll .inner-con .header-bottom .b-inner-header .etc-box > ul > li a:hover {
+    color: #a1af1b
+}
+
+.headerScroll .inner-con .gnb-list {
+    width: 100%;
+    height: auto;
+    border-top: 0px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    display: none;
+
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .inner-list {
+    width: 20%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .inner-list .sub {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 20px 0px 0 0px;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .inner-list .sub > ul > li {
+    font-size: 14px;
+    line-height: 40px;
+    color: #67625d;
+    border: 0px solid;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .inner-list .sub > ul > li a {
+    display: block;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu {
+    width: 80%;
+    height: auto;
+    border: 0px solid;
+    float: right;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category {
+    width: 100%;
+    height: auto;
+    /*background: #f00;*/
+    font-size: 15px;
+    line-height: 30px;
+    border: 0px solid;
+
+    /*position: absolute;
+    right: 0;*/
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list {
+    width: 100%;
+    height: 370px;
+    /*float: left;*/
+    border: 0px solid;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    /*display: none;*/
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list .sub {
+    width: 130px;
+    height: auto;
+    float: left;
+    margin: 0px 40px 0 0px;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list .sub > ul > li {
+    font-size: 14px;
+    line-height: 40px;
+    color: #67625d;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list {
+    width: 100%;
+    height: 370px;
+    border: 0px solid #f00;
+    padding: 20px 0 0 40px;
+    box-sizing: border-box;
+    display: none;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list > ul > li.allProduct {
+    line-height: 47px;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list > ul > li.group::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list > ul > li.group .list-menu {
+    width: 30%;
+    float: left;
+    border: 0px solid;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list {
+    width: 100%;
+    height: 370px;
+    border: 0px solid #00f;
+    padding: 20px 0 0 40px;
+    box-sizing: border-box;
+    display: none;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list > ul > li.allProduct {
+    line-height: 47px;
+
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list > ul > li.group::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.headerScroll .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list > ul > li.group .list-menu {
+    width: 30%;
+    float: left;
+}
+ 
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+/* --------------------기존 header-----------------------*/
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header .inner-con{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.header .inner-con .header-top {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 0 0 25px 0;
+
+}
+
+.header .inner-con .header-top .t-inner-header {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border: 0px solid;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header .inner-con .header-top .t-inner-header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .header-top .t-inner-header h1.logo {
+    width: 116px;
+    height: 40px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -58px;
+    top: 25px;
+}
+
+.header .inner-con .header-top .t-inner-header h1.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb {
+    width: 240px;
+    height: 64px;
+    border: 0px solid;
+    float: right;
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li {
+    width: 30%;
+    height: auto;
+    border: 0px solid;
+    float: left;
+    margin-top: 25px;
+    font-size: 13px;
+    position: relative;
+    color: #6d6d6d
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:hover {
+    cursor: pointer;
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li a {
+    display: block;
+    color: #6d6d6d
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:nth-child(3) {
+    position: relative;
+
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:nth-child(3) .language {
+    width: 70px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #eee;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    z-index: 5;
+    display: none;
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:nth-child(3) .language > ul > li {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:nth-child(3) .language > ul > li:hover {
+    background: #f6f6f6;
+}
+
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:nth-child(3) .language > ul > li:nth-child(2) {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.header .inner-con .header-top .t-inner-header .topGnb > ul > li:nth-child(3) .language > ul > li a{
+    display: block;
+}
+.header .inner-con .header-bottom {
+    width: 100%;
+    height: auto;
+    background: #67625d;
+
+}
+
+.header .inner-con .header-bottom .b-inner-header {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.header .inner-con .header-bottom .b-inner-header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .header-bottom .b-inner-header .gnb {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border: 0px solid;
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -425px;
+    margin-right: 50px;
+}
+
+.header .inner-con .header-bottom .b-inner-header .gnb::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .header-bottom .b-inner-header .gnb > ul > li {
+    width: 130px;
+    height: auto;
+    float: left;
+    padding: 23px 0;
+    margin: 0 40px 0 0;
+}
+
+.header .inner-con .header-bottom .b-inner-header .gnb > ul > li a {
+    color: #fff;
+    font-size: 15px;
+    /*font-weight: bold;*/
+}
+
+.header .inner-con .header-bottom .b-inner-header .gnb > ul > li a:hover {
+    color: #a1af1b;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn {
+    width: 104px;
+    height: 64px;
+    border: 0px solid;
+    display: block;
+    float: right;
+    margin-right: 28px;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li {
+    width: 24px;
+    height: 24px;
+    border: 0px solid;
+    float: left;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li a {
+    display: block;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(1) {
+    margin-right: 16px;
+    background: url(../../img/commens/header/search.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(2) {
+    margin-right: 16px;
+    background: url(../../img/commens/header/cart.PNG) no-repeat 50%;
+    background-size: cover;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(3) {
+    background: url(../../img/commens/header/more.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(1):hover {
+    background: url(../../img/commens/header/search-change.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(2):hover {
+    margin-right: 16px;
+    background: url(../../img/commens/header/cart-change.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+
+
+}
+
+.header .inner-con .header-bottom .b-inner-header span.r-btn > ul > li:nth-child(3):hover {
+    background: url(../../img/commens/header/more-change.png) no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.header .inner-con .header-bottom .b-inner-header .search-box{
+    width: 350px;
+    height: 50px;
+    border: 0px solid;
+    background: #fff;
+    position: absolute;
+    top: 64px;
+    right: 95px;
+    z-index: 20;
+    box-shadow: 4px 2px 10px #ccc;
+    display: none;
+}
+.header .inner-con .header-bottom .b-inner-header .search-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header .inner-con .header-bottom .b-inner-header .search-box input{
+    display: block;
+    width: 280px;
+    height: 50px;
+    border: 0px solid;
+    font-size: 15px;
+    float: left;
+    text-indent: 10px;
+    outline: none;
+}
+.header .inner-con .header-bottom .b-inner-header .search-box .s-icon{
+    width: 50px;
+    height: 50px;
+    border: 0px solid;
+    float: right;
+    box-sizing: border-box;
+}
+.header .inner-con .header-bottom .b-inner-header .search-box .s-icon img{
+    width: 50%;
+    height: auto;
+    padding: 25%;
+}
+.header .inner-con .header-bottom .b-inner-header .etc-box{
+    width: 200px;
+    height: 160px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    position: absolute;
+    z-index: 30;
+    top: 64px;
+    right: 0px;
+    padding: 25px 20px;
+    display: none;
+}
+.header .inner-con .header-bottom .b-inner-header .etc-box>ul>li{
+    line-height: 40px;
+    font-size: 14px;
+    color: #464646;
+}
+.header .inner-con .header-bottom .b-inner-header .etc-box>ul>li a:hover{
+    color: #a1af1b
+}
+.header .inner-con .gnb-list {
+    width: 100%;
+    height: auto;
+    border-top: 0px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    display: none;
+
+}
+
+.header .inner-con .gnb-list .inner-gnbList {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header .inner-con .gnb-list .inner-gnbList::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .inner-list {
+    width: 20%;
+    height: auto;
+    border: 0px solid;
+    box-sizing: border-box;
+    float: left;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .inner-list .sub {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 20px 0px 0 0px;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .inner-list .sub > ul > li {
+    font-size: 14px;
+    line-height: 40px;
+    color: #67625d;
+    border: 0px solid;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .inner-list .sub > ul > li a {
+    display: block;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu {
+    width: 80%;
+    height: auto;
+    border: 0px solid;
+    float: right;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category {
+    width: 100%;
+    height: auto;
+    /*background: #f00;*/
+    font-size: 15px;
+    line-height: 30px;
+    border: 0px solid;
+
+    /*position: absolute;
+    right: 0;*/
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list {
+    width: 100%;
+    height: 370px;
+    /*float: left;*/
+    border: 0px solid;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    /*display: none;*/
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list .sub {
+    width: 130px;
+    height: auto;
+    float: left;
+    margin: 0px 40px 0 0px;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .basic-list .sub > ul > li {
+    font-size: 14px;
+    line-height: 40px;
+    color: #67625d;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list {
+    width: 100%;
+    height: 370px;
+    border: 0px solid #f00;
+    padding: 20px 0 0 40px;
+    box-sizing: border-box;
+    display: none;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list > ul > li.allProduct {
+    line-height: 47px;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list > ul > li.group::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teashop-list > ul > li.group .list-menu {
+    width: 30%;
+    float: left;
+    border: 0px solid;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list {
+    width: 100%;
+    height: 370px;
+    border: 0px solid #00f;
+    padding: 20px 0 0 40px;
+    box-sizing: border-box;
+    display: none;
+    background: linear-gradient(to right, #f9f9f9, #fff);
+
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list > ul > li.allProduct {
+    line-height: 47px;
+
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list > ul > li.group::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header .inner-con .gnb-list .inner-gnbList .shopMenu .category .teaWareshop-list > ul > li.group .list-menu {
+    width: 30%;
+    float: left;
+}
